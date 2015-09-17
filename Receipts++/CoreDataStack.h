@@ -16,6 +16,8 @@
 
 - (void)saveContext;
 
++ (CoreDataStack *)sharedManager;
+
 @end
 
 

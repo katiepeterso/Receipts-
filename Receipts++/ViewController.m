@@ -11,7 +11,6 @@
 
 @interface ViewController ()
 
-@property (nonatomic) CoreDataStack *dataStack;
 @property (weak, nonatomic) IBOutlet UITableView *listTableView;
 
 @end
@@ -21,7 +20,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
-    self.dataStack = [CoreDataStack new];
     
 }
 
@@ -33,11 +31,11 @@
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [[self.dataStack.fetchedResultsController sections] count];
+    return [[[CoreDataStack sharedManager].fetchedResultsController sections] count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    id <NSFetchedResultsSectionInfo> sectionInfo = [self.dataStack.fetchedResultsController sections][section];
+    id <NSFetchedResultsSectionInfo> sectionInfo = [[CoreDataStack sharedManager].fetchedResultsController sections][section];
     return [sectionInfo numberOfObjects];
 }
 
@@ -54,8 +52,8 @@
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
-        NSManagedObjectContext *context = [self.dataStack.fetchedResultsController managedObjectContext];
-        [context deleteObject:[self.dataStack.fetchedResultsController objectAtIndexPath:indexPath]];
+        NSManagedObjectContext *context = [[CoreDataStack sharedManager].fetchedResultsController managedObjectContext];
+        [context deleteObject:[[CoreDataStack sharedManager].fetchedResultsController objectAtIndexPath:indexPath]];
         
         NSError *error = nil;
         if (![context save:&error]) {
@@ -68,7 +66,7 @@
 }
 
 - (void)configureCell:(UITableViewCell *)cell atIndexPath:(NSIndexPath *)indexPath {
-    NSManagedObject *object = [self.dataStack.fetchedResultsController objectAtIndexPath:indexPath];
+    NSManagedObject *object = [[CoreDataStack sharedManager].fetchedResultsController objectAtIndexPath:indexPath];
     cell.textLabel.text = [[object valueForKey:@"timeStamp"] description];
 }
 

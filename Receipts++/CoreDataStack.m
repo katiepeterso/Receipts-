@@ -19,6 +19,16 @@
 
 @implementation CoreDataStack
 
++ (CoreDataStack *)sharedManager {
+    static CoreDataStack *sharedCoreDataStack = nil;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        sharedCoreDataStack = [[self alloc] init];
+    });
+    return sharedCoreDataStack;
+}
+
+
 - (instancetype)init
 {
     self = [super init];
@@ -73,17 +83,17 @@
     if (_fetchedResultsController != nil) {
         return _fetchedResultsController;
     }
-    
     NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
     // Edit the entity name as appropriate.
-    NSEntityDescription *receipt = [NSEntityDescription entityForName:@"Receipt" inManagedObjectContext:self.context];
-    [fetchRequest setEntity:receipt];
+    NSEntityDescription *tag = [NSEntityDescription entityForName:@"Tag" inManagedObjectContext:self.context];
+    [fetchRequest setEntity:tag];
     
     // Set the batch size to a suitable number.
     [fetchRequest setFetchBatchSize:20];
     
     // Edit the sort key as appropriate.
-    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"timeStamp" ascending:NO];
+    NSSortDescriptor *sortDescriptor = [[NSSortDescriptor alloc] initWithKey:@"tagName" ascending:NO];
     
     [fetchRequest setSortDescriptors:@[sortDescriptor]];
     
