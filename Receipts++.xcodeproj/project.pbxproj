@@ -11,7 +11,6 @@
 		AAD8D8DC1BAB44F600218CC9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D8DB1BAB44F600218CC9 /* AppDelegate.m */; };
 		AAD8D8DF1BAB44F600218CC9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D8DE1BAB44F600218CC9 /* ViewController.m */; };
 		AAD8D8E21BAB44F600218CC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD8D8E01BAB44F600218CC9 /* Main.storyboard */; };
-		AAD8D8E51BAB44F600218CC9 /* Receipts__.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D8E31BAB44F600218CC9 /* Receipts__.xcdatamodeld */; };
 		AAD8D8E71BAB44F600218CC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAD8D8E61BAB44F600218CC9 /* Assets.xcassets */; };
 		AAD8D8EA1BAB44F600218CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD8D8E81BAB44F600218CC9 /* LaunchScreen.storyboard */; };
 		AAD8D8F51BAB44F600218CC9 /* Receipts__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D8F41BAB44F600218CC9 /* Receipts__Tests.m */; };
@@ -20,6 +19,8 @@
 		AAD8D9161BAB499400218CC9 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9101BAB499400218CC9 /* Tag.m */; settings = {ASSET_TAGS = (); }; };
 		AAD8D9171BAB499400218CC9 /* Receipt+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9121BAB499400218CC9 /* Receipt+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		AAD8D9181BAB499400218CC9 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9141BAB499400218CC9 /* Receipt.m */; settings = {ASSET_TAGS = (); }; };
+		AAD8D91C1BAB4B3100218CC9 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D91B1BAB4B3100218CC9 /* CoreDataStack.m */; settings = {ASSET_TAGS = (); }; };
+		AAD8D91F1BAB4E7500218CC9 /* Receipts__.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D91D1BAB4E7500218CC9 /* Receipts__.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,7 +48,6 @@
 		AAD8D8DD1BAB44F600218CC9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		AAD8D8DE1BAB44F600218CC9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		AAD8D8E11BAB44F600218CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AAD8D8E41BAB44F600218CC9 /* Receipts__.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Receipts__.xcdatamodel; sourceTree = "<group>"; };
 		AAD8D8E61BAB44F600218CC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AAD8D8E91BAB44F600218CC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AAD8D8EB1BAB44F600218CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +65,9 @@
 		AAD8D9121BAB499400218CC9 /* Receipt+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Receipt+CoreDataProperties.m"; sourceTree = "<group>"; };
 		AAD8D9131BAB499400218CC9 /* Receipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receipt.h; sourceTree = "<group>"; };
 		AAD8D9141BAB499400218CC9 /* Receipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receipt.m; sourceTree = "<group>"; };
+		AAD8D91A1BAB4B3100218CC9 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
+		AAD8D91B1BAB4B3100218CC9 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
+		AAD8D91E1BAB4E7500218CC9 /* Receipts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Receipts.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,7 @@
 		AAD8D9191BAB49F100218CC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				AAD8D91D1BAB4E7500218CC9 /* Receipts__.xcdatamodeld */,
 				AAD8D90D1BAB499400218CC9 /* Tag+CoreDataProperties.h */,
 				AAD8D90E1BAB499400218CC9 /* Tag+CoreDataProperties.m */,
 				AAD8D90F1BAB499400218CC9 /* Tag.h */,
@@ -166,7 +170,8 @@
 				AAD8D9121BAB499400218CC9 /* Receipt+CoreDataProperties.m */,
 				AAD8D9131BAB499400218CC9 /* Receipt.h */,
 				AAD8D9141BAB499400218CC9 /* Receipt.m */,
-				AAD8D8E31BAB44F600218CC9 /* Receipts__.xcdatamodeld */,
+				AAD8D91A1BAB4B3100218CC9 /* CoreDataStack.h */,
+				AAD8D91B1BAB4B3100218CC9 /* CoreDataStack.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -303,12 +308,13 @@
 			files = (
 				AAD8D9181BAB499400218CC9 /* Receipt.m in Sources */,
 				AAD8D9161BAB499400218CC9 /* Tag.m in Sources */,
-				AAD8D8E51BAB44F600218CC9 /* Receipts__.xcdatamodeld in Sources */,
+				AAD8D91F1BAB4E7500218CC9 /* Receipts__.xcdatamodeld in Sources */,
 				AAD8D9171BAB499400218CC9 /* Receipt+CoreDataProperties.m in Sources */,
 				AAD8D9151BAB499400218CC9 /* Tag+CoreDataProperties.m in Sources */,
 				AAD8D8DF1BAB44F600218CC9 /* ViewController.m in Sources */,
 				AAD8D8DC1BAB44F600218CC9 /* AppDelegate.m in Sources */,
 				AAD8D8D91BAB44F600218CC9 /* main.m in Sources */,
+				AAD8D91C1BAB4B3100218CC9 /* CoreDataStack.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -552,12 +558,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		AAD8D8E31BAB44F600218CC9 /* Receipts__.xcdatamodeld */ = {
+		AAD8D91D1BAB4E7500218CC9 /* Receipts__.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				AAD8D8E41BAB44F600218CC9 /* Receipts__.xcdatamodel */,
+				AAD8D91E1BAB4E7500218CC9 /* Receipts.xcdatamodel */,
 			);
-			currentVersion = AAD8D8E41BAB44F600218CC9 /* Receipts__.xcdatamodel */;
+			currentVersion = AAD8D91E1BAB4E7500218CC9 /* Receipts.xcdatamodel */;
 			path = Receipts__.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
