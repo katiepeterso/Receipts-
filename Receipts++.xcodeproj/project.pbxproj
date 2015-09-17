@@ -16,6 +16,10 @@
 		AAD8D8EA1BAB44F600218CC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AAD8D8E81BAB44F600218CC9 /* LaunchScreen.storyboard */; };
 		AAD8D8F51BAB44F600218CC9 /* Receipts__Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D8F41BAB44F600218CC9 /* Receipts__Tests.m */; };
 		AAD8D9001BAB44F600218CC9 /* Receipts__UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D8FF1BAB44F600218CC9 /* Receipts__UITests.m */; };
+		AAD8D9151BAB499400218CC9 /* Tag+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D90E1BAB499400218CC9 /* Tag+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		AAD8D9161BAB499400218CC9 /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9101BAB499400218CC9 /* Tag.m */; settings = {ASSET_TAGS = (); }; };
+		AAD8D9171BAB499400218CC9 /* Receipt+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9121BAB499400218CC9 /* Receipt+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
+		AAD8D9181BAB499400218CC9 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9141BAB499400218CC9 /* Receipt.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,14 @@
 		AAD8D8FB1BAB44F600218CC9 /* Receipts++UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Receipts++UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		AAD8D8FF1BAB44F600218CC9 /* Receipts__UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Receipts__UITests.m; sourceTree = "<group>"; };
 		AAD8D9011BAB44F600218CC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAD8D90D1BAB499400218CC9 /* Tag+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Tag+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AAD8D90E1BAB499400218CC9 /* Tag+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Tag+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AAD8D90F1BAB499400218CC9 /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		AAD8D9101BAB499400218CC9 /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		AAD8D9111BAB499400218CC9 /* Receipt+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Receipt+CoreDataProperties.h"; sourceTree = "<group>"; };
+		AAD8D9121BAB499400218CC9 /* Receipt+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Receipt+CoreDataProperties.m"; sourceTree = "<group>"; };
+		AAD8D9131BAB499400218CC9 /* Receipt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Receipt.h; sourceTree = "<group>"; };
+		AAD8D9141BAB499400218CC9 /* Receipt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Receipt.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +123,7 @@
 				AAD8D8E61BAB44F600218CC9 /* Assets.xcassets */,
 				AAD8D8E81BAB44F600218CC9 /* LaunchScreen.storyboard */,
 				AAD8D8EB1BAB44F600218CC9 /* Info.plist */,
-				AAD8D8E31BAB44F600218CC9 /* Receipts__.xcdatamodeld */,
+				AAD8D9191BAB49F100218CC9 /* Model */,
 				AAD8D8D71BAB44F600218CC9 /* Supporting Files */,
 			);
 			path = "Receipts++";
@@ -141,6 +153,22 @@
 				AAD8D9011BAB44F600218CC9 /* Info.plist */,
 			);
 			path = "Receipts++UITests";
+			sourceTree = "<group>";
+		};
+		AAD8D9191BAB49F100218CC9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AAD8D90D1BAB499400218CC9 /* Tag+CoreDataProperties.h */,
+				AAD8D90E1BAB499400218CC9 /* Tag+CoreDataProperties.m */,
+				AAD8D90F1BAB499400218CC9 /* Tag.h */,
+				AAD8D9101BAB499400218CC9 /* Tag.m */,
+				AAD8D9111BAB499400218CC9 /* Receipt+CoreDataProperties.h */,
+				AAD8D9121BAB499400218CC9 /* Receipt+CoreDataProperties.m */,
+				AAD8D9131BAB499400218CC9 /* Receipt.h */,
+				AAD8D9141BAB499400218CC9 /* Receipt.m */,
+				AAD8D8E31BAB44F600218CC9 /* Receipts__.xcdatamodeld */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +301,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AAD8D9181BAB499400218CC9 /* Receipt.m in Sources */,
+				AAD8D9161BAB499400218CC9 /* Tag.m in Sources */,
 				AAD8D8E51BAB44F600218CC9 /* Receipts__.xcdatamodeld in Sources */,
+				AAD8D9171BAB499400218CC9 /* Receipt+CoreDataProperties.m in Sources */,
+				AAD8D9151BAB499400218CC9 /* Tag+CoreDataProperties.m in Sources */,
 				AAD8D8DF1BAB44F600218CC9 /* ViewController.m in Sources */,
 				AAD8D8DC1BAB44F600218CC9 /* AppDelegate.m in Sources */,
 				AAD8D8D91BAB44F600218CC9 /* main.m in Sources */,
