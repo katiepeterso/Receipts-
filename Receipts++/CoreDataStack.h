@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 @import CoreData;
 
-@interface CoreDataStack : NSObject
+@interface CoreDataStack : NSObject <NSFetchedResultsControllerDelegate>
 
 @property (nonatomic) NSManagedObjectContext *context;
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 - (void)saveContext;
 

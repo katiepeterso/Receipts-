@@ -21,6 +21,7 @@
 		AAD8D9181BAB499400218CC9 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9141BAB499400218CC9 /* Receipt.m */; settings = {ASSET_TAGS = (); }; };
 		AAD8D91C1BAB4B3100218CC9 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D91B1BAB4B3100218CC9 /* CoreDataStack.m */; settings = {ASSET_TAGS = (); }; };
 		AAD8D91F1BAB4E7500218CC9 /* Receipts__.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D91D1BAB4E7500218CC9 /* Receipts__.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		AAD8D9671BAB6E1100218CC9 /* AddReceiptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9661BAB6E1100218CC9 /* AddReceiptVC.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		AAD8D91A1BAB4B3100218CC9 /* CoreDataStack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataStack.h; sourceTree = "<group>"; };
 		AAD8D91B1BAB4B3100218CC9 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		AAD8D91E1BAB4E7500218CC9 /* Receipts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Receipts.xcdatamodel; sourceTree = "<group>"; };
+		AAD8D9651BAB6E1100218CC9 /* AddReceiptVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReceiptVC.h; sourceTree = "<group>"; };
+		AAD8D9661BAB6E1100218CC9 /* AddReceiptVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReceiptVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +125,8 @@
 				AAD8D8DB1BAB44F600218CC9 /* AppDelegate.m */,
 				AAD8D8DD1BAB44F600218CC9 /* ViewController.h */,
 				AAD8D8DE1BAB44F600218CC9 /* ViewController.m */,
+				AAD8D9651BAB6E1100218CC9 /* AddReceiptVC.h */,
+				AAD8D9661BAB6E1100218CC9 /* AddReceiptVC.m */,
 				AAD8D8E01BAB44F600218CC9 /* Main.storyboard */,
 				AAD8D8E61BAB44F600218CC9 /* Assets.xcassets */,
 				AAD8D8E81BAB44F600218CC9 /* LaunchScreen.storyboard */,
@@ -313,6 +318,7 @@
 				AAD8D9151BAB499400218CC9 /* Tag+CoreDataProperties.m in Sources */,
 				AAD8D8DF1BAB44F600218CC9 /* ViewController.m in Sources */,
 				AAD8D8DC1BAB44F600218CC9 /* AppDelegate.m in Sources */,
+				AAD8D9671BAB6E1100218CC9 /* AddReceiptVC.m in Sources */,
 				AAD8D8D91BAB44F600218CC9 /* main.m in Sources */,
 				AAD8D91C1BAB4B3100218CC9 /* CoreDataStack.m in Sources */,
 			);
