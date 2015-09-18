@@ -8,9 +8,15 @@
 
 #import "Receipt.h"
 #import "Tag.h"
+#import "CoreDataStack.h"
 
 @implementation Receipt
 
-// Insert code here to add functionality to your managed object subclass
++ (Receipt *)createReceipt {
+    
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Receipt" inManagedObjectContext:[CoreDataStack sharedManager].context];
+    
+    return [[Receipt alloc] initWithEntity:entity insertIntoManagedObjectContext:[CoreDataStack sharedManager].context];
+}
 
 @end

@@ -7,8 +7,16 @@
 //
 
 #import "AddReceiptVC.h"
+#import "CoreDataHelperMethods.h"
+#import "Receipt.h"
 
 @interface AddReceiptVC ()
+@property (weak, nonatomic) IBOutlet UITextField *receiptAmountTextField;
+@property (weak, nonatomic) IBOutlet UITextView *receiptDescriptionTextView;
+@property (weak, nonatomic) IBOutlet UIButton *foodTagButton;
+@property (weak, nonatomic) IBOutlet UIButton *businessTagButton;
+@property (weak, nonatomic) IBOutlet UIButton *billsTagButton;
+@property (weak, nonatomic) IBOutlet UIButton *entertainmentTagButton;
 
 @end
 
@@ -37,6 +45,26 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 4;
+}
+- (IBAction)foodTagSelected:(id)sender {
+}
+- (IBAction)businessTagSelected:(id)sender {
+}
+- (IBAction)billsTagSelected:(id)sender {
+}
+- (IBAction)entertainmentTagSelected:(id)sender {
+}
+- (IBAction)addReceipt:(id)sender {
+    if (self.receiptDescriptionTextView.text) {
+        if (self.receiptAmountTextField.text) {
+            Receipt *newReceipt = [Receipt createReceipt];
+            newReceipt.amount = [NSDecimalNumber decimalNumberWithString:self.receiptAmountTextField.text];
+            newReceipt.receiptDescription = self.receiptDescriptionTextView.text;
+            newReceipt.timeStamp = [NSDate date];
+            [CoreDataHelperMethods saveNewReceipt:newReceipt];
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }
+    }
 }
 
 @end

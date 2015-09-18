@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="GAE-tP-raJ">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="554"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="jZo-Jo-e0J" style="IBUITableViewCellStyleDefault" id="EEp-H3-djI">
                                         <rect key="frame" x="0.0" y="49.5" width="600" height="44"/>
@@ -148,18 +148,30 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G27-0R-GWr">
                                                     <rect key="frame" x="25" y="0.0" width="35" height="30"/>
                                                     <state key="normal" title="Food"/>
+                                                    <connections>
+                                                        <action selector="foodTagSelected:" destination="FYv-Tv-Uzq" eventType="touchUpInside" id="N7U-lj-Bnt"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvL-UC-fws">
                                                     <rect key="frame" x="85" y="0.0" width="62" height="30"/>
                                                     <state key="normal" title="Business"/>
+                                                    <connections>
+                                                        <action selector="businessTagSelected:" destination="FYv-Tv-Uzq" eventType="touchUpInside" id="V1H-6W-njj"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJi-k5-Oq8">
                                                     <rect key="frame" x="25" y="36" width="30" height="30"/>
                                                     <state key="normal" title="Bills"/>
+                                                    <connections>
+                                                        <action selector="billsTagSelected:" destination="FYv-Tv-Uzq" eventType="touchUpInside" id="kfo-jY-fp1"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmC-yv-FJb">
                                                     <rect key="frame" x="85" y="36" width="97" height="30"/>
                                                     <state key="normal" title="Entertainment"/>
+                                                    <connections>
+                                                        <action selector="entertainmentTagSelected:" destination="FYv-Tv-Uzq" eventType="touchUpInside" id="NKk-1u-jyD"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -192,6 +204,9 @@
                                                         <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="addReceipt:" destination="FYv-Tv-Uzq" eventType="touchUpInside" id="oQC-7p-qiq"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <constraints>
@@ -208,6 +223,14 @@
                             <outlet property="delegate" destination="FYv-Tv-Uzq" id="Y2N-QB-fCB"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="billsTagButton" destination="rJi-k5-Oq8" id="RLJ-aB-WaD"/>
+                        <outlet property="businessTagButton" destination="YvL-UC-fws" id="DBv-cU-BCf"/>
+                        <outlet property="entertainmentTagButton" destination="qmC-yv-FJb" id="ToY-CQ-NUI"/>
+                        <outlet property="foodTagButton" destination="G27-0R-GWr" id="swC-lR-MoT"/>
+                        <outlet property="receiptAmountTextField" destination="07p-bL-7Vq" id="Dh4-yp-lHT"/>
+                        <outlet property="receiptDescriptionTextView" destination="VJM-4C-ntK" id="pbR-Ez-Sdy"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uuS-ZI-u1v" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
