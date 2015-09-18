@@ -16,4 +16,13 @@
 @dynamic tagName;
 @dynamic receipts;
 
+//- (instancetype)initWithName:(NSString *)tagName
+//{
+//    self = [super init];
+//    if (self) {
+//        self.tagName = tagName;
+//    }
+//    return self;
+//}
+//
 @end

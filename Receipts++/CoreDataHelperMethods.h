@@ -1,5 +1,5 @@
 //
-//  Tag.h
+//  CoreDataHelperMethods.h
 //  Receipts++
 //
 //  Created by Katherine Peterson on 2015-09-17.
@@ -7,14 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreData/CoreData.h>
 
-NS_ASSUME_NONNULL_BEGIN
+@class Receipt;
 
-@interface Tag : NSManagedObject
+@interface CoreDataHelperMethods : NSObject
+
++(void)saveNewReceipt:(Receipt *)receipt;
++(void)saveTags;
 
 @end
-
-NS_ASSUME_NONNULL_END
-
-#import "Tag+CoreDataProperties.h"

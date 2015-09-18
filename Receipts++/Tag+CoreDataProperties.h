@@ -18,6 +18,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nullable, nonatomic, retain) NSString *tagName;
 @property (nullable, nonatomic, retain) NSSet<NSManagedObject *> *receipts;
 
+//- (instancetype)initWithName:(NSString *)tagName;
+//
 @end
 
 @interface Tag (CoreDataGeneratedAccessors)

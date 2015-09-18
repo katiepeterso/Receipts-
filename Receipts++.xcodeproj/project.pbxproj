@@ -22,6 +22,7 @@
 		AAD8D91C1BAB4B3100218CC9 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D91B1BAB4B3100218CC9 /* CoreDataStack.m */; settings = {ASSET_TAGS = (); }; };
 		AAD8D91F1BAB4E7500218CC9 /* Receipts__.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D91D1BAB4E7500218CC9 /* Receipts__.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
 		AAD8D9671BAB6E1100218CC9 /* AddReceiptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9661BAB6E1100218CC9 /* AddReceiptVC.m */; settings = {ASSET_TAGS = (); }; };
+		AAD8D96A1BAB8E5400218CC9 /* CoreDataHelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9691BAB8E5400218CC9 /* CoreDataHelperMethods.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,8 @@
 		AAD8D91E1BAB4E7500218CC9 /* Receipts.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Receipts.xcdatamodel; sourceTree = "<group>"; };
 		AAD8D9651BAB6E1100218CC9 /* AddReceiptVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddReceiptVC.h; sourceTree = "<group>"; };
 		AAD8D9661BAB6E1100218CC9 /* AddReceiptVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReceiptVC.m; sourceTree = "<group>"; };
+		AAD8D9681BAB8E5400218CC9 /* CoreDataHelperMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelperMethods.h; sourceTree = "<group>"; };
+		AAD8D9691BAB8E5400218CC9 /* CoreDataHelperMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelperMethods.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +178,8 @@
 				AAD8D9121BAB499400218CC9 /* Receipt+CoreDataProperties.m */,
 				AAD8D9131BAB499400218CC9 /* Receipt.h */,
 				AAD8D9141BAB499400218CC9 /* Receipt.m */,
+				AAD8D9681BAB8E5400218CC9 /* CoreDataHelperMethods.h */,
+				AAD8D9691BAB8E5400218CC9 /* CoreDataHelperMethods.m */,
 				AAD8D91A1BAB4B3100218CC9 /* CoreDataStack.h */,
 				AAD8D91B1BAB4B3100218CC9 /* CoreDataStack.m */,
 			);
@@ -313,6 +318,7 @@
 			files = (
 				AAD8D9181BAB499400218CC9 /* Receipt.m in Sources */,
 				AAD8D9161BAB499400218CC9 /* Tag.m in Sources */,
+				AAD8D96A1BAB8E5400218CC9 /* CoreDataHelperMethods.m in Sources */,
 				AAD8D91F1BAB4E7500218CC9 /* Receipts__.xcdatamodeld in Sources */,
 				AAD8D9171BAB499400218CC9 /* Receipt+CoreDataProperties.m in Sources */,
 				AAD8D9151BAB499400218CC9 /* Tag+CoreDataProperties.m in Sources */,
