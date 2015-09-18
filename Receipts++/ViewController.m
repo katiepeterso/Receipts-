@@ -10,7 +10,7 @@
 #import "CoreDataStack.h"
 #import "CoreDataHelperMethods.h"
 
-@interface ViewController ()
+@interface ViewController ()<UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *listTableView;
 
