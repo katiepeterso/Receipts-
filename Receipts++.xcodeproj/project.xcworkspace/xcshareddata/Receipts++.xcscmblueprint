@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "62D08050CD887407AF4336281BA846A56AA5894E",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "62D08050CD887407AF4336281BA846A56AA5894E" : 0,
+    "DC22E5519872F76C77D53A43655886FBD8E7A803" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "5F2F8285-6F2F-4FD8-94BA-E39943E9FBE7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "62D08050CD887407AF4336281BA846A56AA5894E" : "Receipts++\/",
+    "DC22E5519872F76C77D53A43655886FBD8E7A803" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Receipts++",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Receipts++.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/katiepeterso\/Receipts-.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "62D08050CD887407AF4336281BA846A56AA5894E"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/katiepeterso\/lighthouse.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DC22E5519872F76C77D53A43655886FBD8E7A803"
+    }
+  ]
+}

@@ -20,7 +20,7 @@
 		AAD8D9171BAB499400218CC9 /* Receipt+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9121BAB499400218CC9 /* Receipt+CoreDataProperties.m */; settings = {ASSET_TAGS = (); }; };
 		AAD8D9181BAB499400218CC9 /* Receipt.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9141BAB499400218CC9 /* Receipt.m */; settings = {ASSET_TAGS = (); }; };
 		AAD8D91C1BAB4B3100218CC9 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D91B1BAB4B3100218CC9 /* CoreDataStack.m */; settings = {ASSET_TAGS = (); }; };
-		AAD8D91F1BAB4E7500218CC9 /* Receipts__.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D91D1BAB4E7500218CC9 /* Receipts__.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
+		AAD8D91F1BAB4E7500218CC9 /* Receipts.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D91D1BAB4E7500218CC9 /* Receipts.xcdatamodeld */; settings = {ASSET_TAGS = (); }; };
 		AAD8D9671BAB6E1100218CC9 /* AddReceiptVC.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9661BAB6E1100218CC9 /* AddReceiptVC.m */; settings = {ASSET_TAGS = (); }; };
 		AAD8D96A1BAB8E5400218CC9 /* CoreDataHelperMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD8D9691BAB8E5400218CC9 /* CoreDataHelperMethods.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
@@ -169,7 +169,7 @@
 		AAD8D9191BAB49F100218CC9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AAD8D91D1BAB4E7500218CC9 /* Receipts__.xcdatamodeld */,
+				AAD8D91D1BAB4E7500218CC9 /* Receipts.xcdatamodeld */,
 				AAD8D90D1BAB499400218CC9 /* Tag+CoreDataProperties.h */,
 				AAD8D90E1BAB499400218CC9 /* Tag+CoreDataProperties.m */,
 				AAD8D90F1BAB499400218CC9 /* Tag.h */,
@@ -319,7 +319,7 @@
 				AAD8D9181BAB499400218CC9 /* Receipt.m in Sources */,
 				AAD8D9161BAB499400218CC9 /* Tag.m in Sources */,
 				AAD8D96A1BAB8E5400218CC9 /* CoreDataHelperMethods.m in Sources */,
-				AAD8D91F1BAB4E7500218CC9 /* Receipts__.xcdatamodeld in Sources */,
+				AAD8D91F1BAB4E7500218CC9 /* Receipts.xcdatamodeld in Sources */,
 				AAD8D9171BAB499400218CC9 /* Receipt+CoreDataProperties.m in Sources */,
 				AAD8D9151BAB499400218CC9 /* Tag+CoreDataProperties.m in Sources */,
 				AAD8D8DF1BAB44F600218CC9 /* ViewController.m in Sources */,
@@ -570,13 +570,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		AAD8D91D1BAB4E7500218CC9 /* Receipts__.xcdatamodeld */ = {
+		AAD8D91D1BAB4E7500218CC9 /* Receipts.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				AAD8D91E1BAB4E7500218CC9 /* Receipts.xcdatamodel */,
 			);
 			currentVersion = AAD8D91E1BAB4E7500218CC9 /* Receipts.xcdatamodel */;
-			path = Receipts__.xcdatamodeld;
+			path = Receipts.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

@@ -13,10 +13,10 @@
 @implementation Receipt
 
 + (Receipt *)createReceipt {
+    NSManagedObjectContext* context = [CoreDataStack sharedManager].context;
+    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Receipt" inManagedObjectContext:context];
     
-    NSEntityDescription *entity = [NSEntityDescription entityForName:@"Receipt" inManagedObjectContext:[CoreDataStack sharedManager].context];
-    
-    return [[Receipt alloc] initWithEntity:entity insertIntoManagedObjectContext:[CoreDataStack sharedManager].context];
+    return [[Receipt alloc] initWithEntity:entity insertIntoManagedObjectContext:context];
 }
 
 @end

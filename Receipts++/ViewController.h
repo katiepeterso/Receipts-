@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+@import CoreData;
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) NSFetchedResultsController *fetchedResultsController;
 
 @end
 
